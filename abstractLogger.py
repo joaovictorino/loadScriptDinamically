@@ -1,5 +1,6 @@
 import abc
 
+# ISP
 class AbstractLogger(abc.ABC):
     
     @abc.abstractmethod

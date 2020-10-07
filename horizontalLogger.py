@@ -1,5 +1,6 @@
 from abstractLogger import AbstractLogger
 
+# SRP LSP
 class HorizontalLogger(AbstractLogger):
 
     def log(self, text):
