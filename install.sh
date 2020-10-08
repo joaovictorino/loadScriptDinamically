@@ -6,22 +6,13 @@ read resposta
 
 if [ $resposta == "h" ]
 then
-    echo -n "horizontalLogger.HorizontalLogger" > config.cfg
-    mv verticalLogger.py ./external 2>/dev/null
-    mv verticalLoggerProblem.py ./external 2>/dev/null
-    mv ./external/horizontalLogger.py . 2>/dev/null
+    echo -n "external.horizontalLogger.HorizontalLogger" > config.cfg
     echo "Log horizontal instalado com sucesso"
 elif [ $resposta == "v" ]
 then
-    echo -n "verticalLogger.VerticalLogger" > config.cfg
-    mv horizontalLogger.py ./external 2>/dev/null
-    mv verticalLoggerProblem.py ./external 2>/dev/null
-    mv ./external/verticalLogger.py . 2>/dev/null
+    echo -n "external.verticalLogger.VerticalLogger" > config.cfg
     echo "Log vertical instalado com sucesso"
 else
-    echo -n "horizontalLoggerProblem.HorizontalLoggerProblem" > config.cfg
-    mv horizonralLogger.py ./external 2>/dev/null
-    mv verticalLogger.py ./external 2>/dev/null
-    mv ./external/verticalLoggerProblem.py . 2>/dev/null
+    echo -n "extternal.horizontalLoggerProblem.HorizontalLoggerProblem" > config.cfg
     echo "Log plus instalado com sucesso"
 fi
