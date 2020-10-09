@@ -1,5 +1,6 @@
 from abstractLogger import AbstractLogger
 
+# SRP
 class VerticalLogger(AbstractLogger):
 
     def log(self, text):
